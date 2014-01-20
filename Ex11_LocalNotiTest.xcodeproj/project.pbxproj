@@ -21,6 +21,8 @@
 		0042FF9F188CBCE500A7FEF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0042FF81188CBCE400A7FEF8 /* UIKit.framework */; };
 		0042FFA7188CBCE500A7FEF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0042FFA5188CBCE500A7FEF8 /* InfoPlist.strings */; };
 		0042FFA9188CBCE500A7FEF8 /* Ex11_LocalNotiTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0042FFA8188CBCE500A7FEF8 /* Ex11_LocalNotiTestTests.m */; };
+		0042FFB3188CBF4E00A7FEF8 /* music1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0042FFB2188CBF4E00A7FEF8 /* music1.mp3 */; };
+		0042FFB5188CBF5B00A7FEF8 /* i0.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0042FFB4188CBF5B00A7FEF8 /* i0.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		0042FFA4188CBCE500A7FEF8 /* Ex11_LocalNotiTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ex11_LocalNotiTestTests-Info.plist"; sourceTree = "<group>"; };
 		0042FFA6188CBCE500A7FEF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0042FFA8188CBCE500A7FEF8 /* Ex11_LocalNotiTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ex11_LocalNotiTestTests.m; sourceTree = "<group>"; };
+		0042FFB2188CBF4E00A7FEF8 /* music1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music1.mp3; sourceTree = "<group>"; };
+		0042FFB4188CBF5B00A7FEF8 /* i0.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i0.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 		0042FF83188CBCE400A7FEF8 /* Ex11_LocalNotiTest */ = {
 			isa = PBXGroup;
 			children = (
+				0042FFB4188CBF5B00A7FEF8 /* i0.jpeg */,
+				0042FFB2188CBF4E00A7FEF8 /* music1.mp3 */,
 				0042FF8C188CBCE400A7FEF8 /* AppDelegate.h */,
 				0042FF8D188CBCE400A7FEF8 /* AppDelegate.m */,
 				0042FF8F188CBCE400A7FEF8 /* Main.storyboard */,
@@ -199,6 +205,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "SDT-1";
 				TargetAttributes = {
+					0042FF79188CBCE400A7FEF8 = {
+						DevelopmentTeam = F4FT6M5A89;
+					};
 					0042FF9A188CBCE500A7FEF8 = {
 						TestTargetID = 0042FF79188CBCE400A7FEF8;
 					};
@@ -230,6 +239,8 @@
 			files = (
 				0042FF96188CBCE400A7FEF8 /* Images.xcassets in Resources */,
 				0042FF88188CBCE400A7FEF8 /* InfoPlist.strings in Resources */,
+				0042FFB5188CBF5B00A7FEF8 /* i0.jpeg in Resources */,
+				0042FFB3188CBF4E00A7FEF8 /* music1.mp3 in Resources */,
 				0042FF91188CBCE400A7FEF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,10 +389,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ex11_LocalNotiTest/Ex11_LocalNotiTest-Prefix.pch";
 				INFOPLIST_FILE = "Ex11_LocalNotiTest/Ex11_LocalNotiTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +405,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ex11_LocalNotiTest/Ex11_LocalNotiTest-Prefix.pch";
 				INFOPLIST_FILE = "Ex11_LocalNotiTest/Ex11_LocalNotiTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +477,7 @@
 				0042FFAE188CBCE500A7FEF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0042FFAF188CBCE500A7FEF8 /* Build configuration list for PBXNativeTarget "Ex11_LocalNotiTestTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +486,7 @@
 				0042FFB1188CBCE500A7FEF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
